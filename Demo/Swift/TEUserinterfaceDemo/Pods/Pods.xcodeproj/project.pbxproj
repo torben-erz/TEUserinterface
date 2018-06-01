@@ -44,7 +44,7 @@
 		7752C77F2E2757722FBD58568A358E4D /* Pods_TEUserinterfaceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEUserinterfaceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AD47172FD107C727EB685F1C665F3B9 /* TEUserinterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TEUserinterface.xcconfig; sourceTree = "<group>"; };
-		A06FC8709DC802B4728B5502BBE44CCF /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		A06FC8709DC802B4728B5502BBE44CCF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A8C8ED818C99DE5D9815C3347B12FEB7 /* Pods-TEUserinterfaceDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TEUserinterfaceDemo-umbrella.h"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BDD164D52C0EAC08B08C2E7C461AF1F9 /* TEUserinterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = TEUserinterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -180,7 +180,7 @@
 		9E3BA00148229EBA3D555D259910D7AC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A06FC8709DC802B4728B5502BBE44CCF /* LICENSE.md */,
+				A06FC8709DC802B4728B5502BBE44CCF /* LICENSE */,
 				BDD164D52C0EAC08B08C2E7C461AF1F9 /* TEUserinterface.podspec */,
 			);
 			name = Pod;

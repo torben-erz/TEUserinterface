@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author        = { "Torben Erz" => "torben.erz@gmail.com" }
   s.platform      = :ios, '9.0'
   s.source        = { :git => "https://github.com/torben-erz/TEUserinterface.git", :tag => s.version.to_s }
-  s.source_files  = 'TEUserinterface/Source/**/*.swift'
+s.source_files  = 'TEUserinterface/Source/**/*.{swift}'
   s.frameworks    = 'Foundation', 'UIKit'
   s.swift_version = '4.0'
 end
