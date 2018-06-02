@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-@objc public protocol TECodeViewDelegate: class {
+public protocol TECodeViewDelegate: class {
     func codeView(_ codeView: TECodeView, didSubmitCode code: String, isValidCallback: @escaping (Bool)->Void)
     func codeView(_ codeView: TECodeView, didInsertCode code: String)
 }

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-@objc public class TECodeView: UIStackView {
+public class TECodeView: UIStackView {
     
     public enum CodeType {
         case numbers
@@ -22,12 +22,12 @@ import UIKit
         case disabled
     }
     
-    @objc public weak var delegate: TECodeViewDelegate?
+    public weak var delegate: TECodeViewDelegate?
     public var codeType: CodeType = .numbers
     public var digitViewInit: (() -> TECodeDigitView)!
-    @objc public var numberOfDigits: Int = 6
-    @objc public var groupingSize: Int = 3
-    @objc public var itemSpacing: Int = 2
+    public var numberOfDigits: Int = 6
+    public var groupingSize: Int = 3
+    public var itemSpacing: Int = 2
     public var isEnabled: Bool {
         get { return self.digitState != .disabled }
         set {
@@ -67,14 +67,14 @@ import UIKit
         self.initialize()
     }
     
-    @objc override public init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         // Initialisierung
         self.initialize()
     }
     
-    @objc required public init(coder: NSCoder) {
+    required public init(coder: NSCoder) {
         super.init(coder: coder)
         
         // Initialisierung

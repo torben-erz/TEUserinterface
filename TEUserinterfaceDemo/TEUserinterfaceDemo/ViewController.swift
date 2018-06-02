@@ -20,22 +20,21 @@ class ViewController: UIViewController {
             self.codeView.digitViewInit = CodeDigitSquareView.init
         }
     }
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
 }
 
 extension ViewController: TECodeViewDelegate {
     
-    func codeView(_ codeView: TECodeView, didInsertCode code: String) {
-        
-    }
+    func codeView(_ codeView: TECodeView, didInsertCode code: String) { }
     
     func codeView(_ codeView: TECodeView, didSubmitCode code: String, isValidCallback: @escaping (Bool) -> Void) {
         
-        //  codeView.alpha = 0.5
-        
-        // check server for code validity, etc
+        // Den Code an den Server übermitteln
+        self.codeView.alpha = 0.5
+        self.activityIndicatorView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            //       codeView.alpha = 1
-            
+            self.codeView.alpha = 1
+            self.activityIndicatorView.stopAnimating()
             isValidCallback(false)
         }
     }

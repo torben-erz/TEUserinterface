@@ -35,18 +35,24 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="WSb-6u-yQH"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="m8R-3D-0zO">
+                                <rect key="frame" x="177" y="211" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="m8R-3D-0zO" firstAttribute="top" secondItem="Mfy-0E-xZc" secondAttribute="bottom" constant="20" id="D9B-5B-fba"/>
                             <constraint firstItem="P0l-FM-gL0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="IcF-iu-xi3"/>
                             <constraint firstItem="Mfy-0E-xZc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U35-vw-5rP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P0l-FM-gL0" secondAttribute="trailing" constant="16" id="k0m-jo-Ony"/>
                             <constraint firstItem="P0l-FM-gL0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="s2v-2r-LQ2"/>
                             <constraint firstItem="Mfy-0E-xZc" firstAttribute="top" secondItem="P0l-FM-gL0" secondAttribute="bottom" constant="40" id="vUx-Nv-g6w"/>
+                            <constraint firstItem="m8R-3D-0zO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zgo-E6-HPM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="m8R-3D-0zO" id="B4i-db-Xcy"/>
                         <outlet property="codeView" destination="Mfy-0E-xZc" id="JD6-CV-Y9T"/>
                     </connections>
                 </viewController>

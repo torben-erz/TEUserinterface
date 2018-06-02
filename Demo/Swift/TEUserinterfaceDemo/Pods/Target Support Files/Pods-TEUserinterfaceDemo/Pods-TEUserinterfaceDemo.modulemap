@@ -1,6 +1,0 @@
-framework module Pods_TEUserinterfaceDemo {
-  umbrella header "Pods-TEUserinterfaceDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module TEUserinterface {
-  umbrella header "TEUserinterface-umbrella.h"
-
-  export *
-  module * { export * }
-}

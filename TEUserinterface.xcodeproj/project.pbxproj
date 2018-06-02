@@ -20,7 +20,7 @@
 		5BBE888A20C1A9D1004CC3AC /* TECodeDigitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TECodeDigitView.swift; sourceTree = "<group>"; };
 		5BBE888C20C1AA56004CC3AC /* TECodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TECodeView.swift; sourceTree = "<group>"; };
 		5BBE888E20C1ABC7004CC3AC /* TECodeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TECodeViewDelegate.swift; sourceTree = "<group>"; };
-		5BBE889020C1AED5004CC3AC /* TEUserinterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TEUserinterface.podspec; sourceTree = "<group>"; };
+		5BBE889020C1AED5004CC3AC /* TEUserinterface.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TEUserinterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5BBE889220C1B056004CC3AC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
