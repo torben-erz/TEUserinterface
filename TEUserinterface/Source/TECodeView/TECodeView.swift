@@ -145,7 +145,10 @@ public class TECodeView: UIStackView {
         
         if self.groupingSize > 0 {
             for idx in stride(from: self.groupingSize, to: self.numberOfDigits, by: self.groupingSize).reversed() {
-                let separator = TECodeSeparatorView(sign: "-")
+                let separator = TECodeSeparatorView()
+                separator.text = "-"
+                separator.textColor = UIColor.white
+                separator.font = UIFont.systemFont(ofSize: 30)
                 self.insertArrangedSubview(separator, at: idx)
             }
         }
@@ -220,7 +223,7 @@ extension TECodeView {
             code = string.components(separatedBy: CharacterSet.alphanumerics.inverted).joined()
         }
         
-        let index = text.index(text.startIndex, offsetBy: min(numberOfDigits, text.count))
+        let index = code.index(code.startIndex, offsetBy: min(numberOfDigits, code.count))
         self.insertText(String(code[..<index]))
     }
     
@@ -285,7 +288,7 @@ extension TECodeView: UIKeyInput {
             return
         }
         
-        guard isValidText(text) else {
+        guard self.isValidText(text) else {
             return
         }
         

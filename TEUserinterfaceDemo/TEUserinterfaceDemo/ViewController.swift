@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         didSet {
             self.codeView.delegate = self
             self.codeView.numberOfDigits = 6
-            self.codeView.groupingSize = 0
+            self.codeView.groupingSize = 3
             self.codeView.itemSpacing = 7
             self.codeView.digitViewInit = CodeDigitSquareView.init
         }

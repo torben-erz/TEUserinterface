@@ -34,7 +34,7 @@ public class CodeDigitSquareView: UILabel, TECodeDigitView {
         self.font = UIFont.systemFont(ofSize: 30)
         self.layer.borderWidth = 2
         self.layer.backgroundColor = UIColor.white.cgColor
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = 10
         self.textColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1)
         self.configure(withState: .isEmpty)
         self.translatesAutoresizingMaskIntoConstraints = false

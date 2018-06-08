@@ -30,10 +30,8 @@ public extension TECodeDigitView where Self: UIView {
 
 class TECodeSeparatorView: UILabel {
     
-    init(sign: String) {
+    init() {
         super.init(frame: .zero)
-        self.text = text
-        self.font = UIFont.systemFont(ofSize: 30)
         self.textAlignment = .center
         self.setContentHuggingPriority(UILayoutPriority.required, for: .horizontal)
         self.sizeToFit()

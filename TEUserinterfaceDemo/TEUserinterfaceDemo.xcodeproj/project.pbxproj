@@ -102,7 +102,7 @@
 				5BBE889920C1B286004CC3AC /* Sources */,
 				5BBE889A20C1B286004CC3AC /* Frameworks */,
 				5BBE889B20C1B286004CC3AC /* Resources */,
-				7E76B392D7BCEDDE4613E5A1 /* [CP] Embed Pods Frameworks */,
+				95454716BC6F9B6CB20961E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,7 +160,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7E76B392D7BCEDDE4613E5A1 /* [CP] Embed Pods Frameworks */ = {
+		95454716BC6F9B6CB20961E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,10 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5DW97A937;
 				INFOPLIST_FILE = TEUserinterfaceDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.torben-erz.TEUserinterfaceDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -372,10 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5DW97A937;
 				INFOPLIST_FILE = TEUserinterfaceDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.torben-erz.TEUserinterfaceDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
