@@ -30,6 +30,9 @@ extension ViewController: TECodeViewDelegate {
     
     func codeView(_ codeView: TECodeView, didSubmitCode code: String, isValidCallback: @escaping (Bool) -> Void) {
         
+        codeView.failAnimation()
+        
+        /*
         // Den Code an den Server übermitteln
         self.codeView.alpha = 0.5
         self.activityIndicatorView.startAnimating()
@@ -37,6 +40,6 @@ extension ViewController: TECodeViewDelegate {
             self.codeView.alpha = 1
             self.activityIndicatorView.stopAnimating()
             isValidCallback(false)
-        }
+        }*/
     }
 }

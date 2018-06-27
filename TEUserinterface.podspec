@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "TEUserinterface"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary 	 = "A Swift-Library for iOS Usercontrols"
   s.description  = <<-DESC
 	A Swift-Library for iOS Usercontrols.

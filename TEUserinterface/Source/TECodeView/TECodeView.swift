@@ -183,18 +183,23 @@ public class TECodeView: UIStackView {
                 return
             }
             
-            if loSelf.digitState == .loading {
-                loSelf.digitState = .finished
-            } else {
-                loSelf.previousDigitState = .finished
-            }
-            
-            for digitView in loSelf.digitViews {
-                digitView.state = .failedVerification
-            }
-            
-            loSelf.animateFailure()
+            loSelf.failAnimation()
         })
+    }
+    
+    public func failAnimation() {
+        
+        if self.digitState == .loading {
+            self.digitState = .finished
+        } else {
+            self.previousDigitState = .finished
+        }
+        
+        for digitView in self.digitViews {
+            digitView.state = .failedVerification
+        }
+        
+        self.animateFailure()
     }
     
     private func animateFailure() {
