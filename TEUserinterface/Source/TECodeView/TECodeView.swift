@@ -27,6 +27,7 @@ public class TECodeView: UIStackView {
     public var digitViewInit: (() -> TECodeDigitView)!
     public var numberOfDigits: Int = 6
     public var groupingSize: Int = 3
+    public var keyboardAppearance: UIKeyboardAppearance = .default
     public var itemSpacing: Int = 2
     public var isEnabled: Bool {
         get { return self.digitState != .disabled }

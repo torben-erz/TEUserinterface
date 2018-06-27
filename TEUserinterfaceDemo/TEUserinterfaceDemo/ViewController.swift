@@ -17,6 +17,7 @@ class ViewController: UIViewController {
             self.codeView.numberOfDigits = 6
             self.codeView.groupingSize = 3
             self.codeView.itemSpacing = 7
+            self.codeView.keyboardAppearance = .dark
             self.codeView.digitViewInit = CodeDigitSquareView.init
         }
     }
