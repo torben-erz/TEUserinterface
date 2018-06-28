@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 public protocol TECodeViewDelegate: class {
-    func codeView(_ codeView: TECodeView, didSubmitCode code: String, isValidCallback: @escaping (Bool)->Void)
     func codeView(_ codeView: TECodeView, didInsertCode code: String)
+    func codeView(_ codeView: TECodeView, didInsertCode code: String, isValidCallback: @escaping (Bool)->Void)
+    func codeView(_ codeView: TECodeView, didInsertDigit digit: String)
 }

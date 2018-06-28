@@ -26,11 +26,16 @@ class ViewController: UIViewController {
 
 extension ViewController: TECodeViewDelegate {
     
-    func codeView(_ codeView: TECodeView, didInsertCode code: String) { }
+    func codeView(_ codeView: TECodeView, didInsertDigit digit: String) { }
     
-    func codeView(_ codeView: TECodeView, didSubmitCode code: String, isValidCallback: @escaping (Bool) -> Void) {
+    func codeView(_ codeView: TECodeView, didInsertCode code: String) {
         
-        codeView.failAnimation()
+        //codeView.prepareForNewCode()
+    }
+    
+    func codeView(_ codeView: TECodeView, didInsertCode code: String, isValidCallback: @escaping (Bool) -> Void) {
+        
+        //codeView.failAnimation()
         
         /*
         // Den Code an den Server übermitteln
