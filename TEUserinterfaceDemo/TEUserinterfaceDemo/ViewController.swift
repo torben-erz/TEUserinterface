@@ -26,7 +26,9 @@ class ViewController: UIViewController {
 
 extension ViewController: TECodeViewDelegate {
     
-    func codeView(_ codeView: TECodeView, didInsertDigit digit: String) { }
+    func codeView(_ codeView: TECodeView, didInsertDigit digit: String) {
+        
+    }
     
     func codeView(_ codeView: TECodeView, didInsertCode code: String) {
         

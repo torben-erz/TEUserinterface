@@ -299,7 +299,7 @@ extension TECodeView: UIKeyInput {
             return
         }
         
-        //self.delegate?.codeView(self, didInsertCode: text)
+        self.delegate?.codeView(self, didInsertDigit: text)
         
         // state machine
         switch self.digitState {
@@ -328,7 +328,7 @@ extension TECodeView: UIKeyInput {
             return
         }
         
-        //self.delegate?.codeView(self, didInsertCode: "")
+        self.delegate?.codeView(self, didInsertDigit: "")
         
         switch self.digitState {
             
