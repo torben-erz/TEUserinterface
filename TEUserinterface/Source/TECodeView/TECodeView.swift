@@ -188,13 +188,17 @@ public class TECodeView: UIStackView {
         })
     }
     
-    public func failAnimation() {
-        
+    public func prepareForNewCode() {
         if self.digitState == .loading {
             self.digitState = .finished
         } else {
             self.previousDigitState = .finished
         }
+    }
+    
+    public func failAnimation() {
+        
+        self.prepareForNewCode()
         
         for digitView in self.digitViews {
             digitView.state = .failedVerification
