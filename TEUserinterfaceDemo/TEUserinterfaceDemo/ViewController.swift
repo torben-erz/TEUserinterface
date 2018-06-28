@@ -31,6 +31,7 @@ extension ViewController: TECodeViewDelegate {
     func codeView(_ codeView: TECodeView, didInsertCode code: String) {
         
         //codeView.prepareForNewCode()
+        codeView.failAnimation()
     }
     
     func codeView(_ codeView: TECodeView, didInsertCode code: String, isValidCallback: @escaping (Bool) -> Void) {

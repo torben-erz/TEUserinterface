@@ -175,14 +175,6 @@ public class TECodeView: UIStackView {
         return [.loading, .disabled].contains(self.digitState) == false
     }
     
-    public func prepareForNewCode() {
-        if self.digitState == .loading {
-            self.digitState = .finished
-        } else {
-            self.previousDigitState = .finished
-        }
-    }
-    
     func submitDigits() {
         self.digitState = .loading
         
@@ -191,18 +183,23 @@ public class TECodeView: UIStackView {
             guard !isValid, let loSelf = self else {
                 return
             }
-            
-            loSelf.prepareForNewCode()
-            
-            for digitView in loSelf.digitViews {
-                digitView.state = .failedVerification
-            }
-            
-            loSelf.animateFailure()
+        
+            loSelf.failAnimation()
         })
     }
     
     public func failAnimation() {
+        
+        if self.digitState == .loading {
+            self.digitState = .finished
+        } else {
+            self.previousDigitState = .finished
+        }
+        
+        for digitView in self.digitViews {
+            digitView.state = .failedVerification
+        }
+        
         self.animateFailure()
     }
     
@@ -302,7 +299,7 @@ extension TECodeView: UIKeyInput {
             return
         }
         
-        self.delegate?.codeView(self, didInsertCode: text)
+        //self.delegate?.codeView(self, didInsertCode: text)
         
         // state machine
         switch self.digitState {
@@ -331,7 +328,7 @@ extension TECodeView: UIKeyInput {
             return
         }
         
-        self.delegate?.codeView(self, didInsertCode: "")
+        //self.delegate?.codeView(self, didInsertCode: "")
         
         switch self.digitState {
             
